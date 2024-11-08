@@ -9,3 +9,9 @@ export async function getAllRecipes() {
 }
 
 
+export async function getRecipeById(id){
+  //'https://dummyjson.com/recipes/1'
+
+  const {data}= await axios(`/${id}`);
+  return data
+}
