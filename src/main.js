@@ -1,3 +1,3 @@
-import { getAllRecipes } from "./js/dummyJSON-api";
+import { onDOMLoaded } from "./js/handlers";
 
-getAllRecipes();
+document.addEventListener("DOMContentLoaded", onDOMLoaded);
